@@ -1,0 +1,28 @@
+fusefs_enable="YES"
+
+unbound_enable="YES"
+if [ "${unbound_enable}" = "YES" ]; then
+    syslogd_flags="${syslogd_flags} -l /usr/local/etc/unbound/dev/log"
+fi
+
+svscan_enable="NO"
+vsftpd_enable="NO"
+lighttpd_enable="NO"
+httpd_enable="NO"
+postgresql_enable="NO"
+dbus_enable="NO"
+quagga_enable="NO"
+jabberd_enable="NO"
+
+# mysql
+mysql_enable="YES"
+mysql_limits="YES"
+mysql_dbdir="/var/db/mysql"
+mysql_args=""
+
+# desktop
+# enable HALd
+gnome_enable="NO"
+dbus_enable="YES"
+hald_enable="YES"
+polkitd_enable="YES"

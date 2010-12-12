@@ -1,0 +1,11 @@
+# Device	Mountpoint	FStype	Options			Dump	Pass#
+/dev/ad4s3b	none		swap	sw			0	0
+/dev/ufs/root	/		ufs	rw			1	1
+/dev/ufs/tmp	/tmp		ufs	rw,async,noexec		2	2
+/dev/ufs/var	/var		ufs	rw,async		2	2
+/dev/ufs/usr	/usr		ufs	rw,async		2	2
+/dev/acd0	/mnt/cdrom	cd9660	ro,noauto		0	0
+#proc		/proc		procfs	rw			0	0
+#fdescfs		/dev/fd		fdescfs rw			0	0
+#linproc		/compat/linux/proc linprocfs rw			0	0
+#linsys		/compat/linux/sys  linsysfs  rw			0	0

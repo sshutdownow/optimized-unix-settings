@@ -1,0 +1,25 @@
+# System monitoring
+smartd_enable="YES"
+munin_node_enable="YES"
+bsnmpd_enable="YES"
+
+# DNS caching server
+unbound_enable="NO"
+if [ "${unbound_enable}" = "YES" ]; then
+    syslogd_flags="${syslogd_flags} -l /usr/local/etc/unbound/dev/log"
+fi
+
+# MySQL
+mysql_enable="NO"
+mysql_limits="YES"
+mysql_dbdir="/var/db/mysql"
+mysql_args=""
+
+# FTP server
+proftpd_enable="NO"
+
+# Apache
+apache22_enable="NO"
+apache22limits_enable="YES"
+apache22limits_args="-e -C www"
+apache22_flags=""

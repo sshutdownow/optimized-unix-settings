@@ -1,0 +1,4 @@
+local_max_rate=00000
+hide_file={}
+deny_file={}
+write_enable=YES

@@ -1,0 +1,2 @@
+options ip_conntrack hashsize=524288
+# in /etc/sysctl.conf  net.ipv4.netfilter.ip_conntrack_max = 524288
