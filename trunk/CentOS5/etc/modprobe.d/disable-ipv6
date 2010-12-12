@@ -1,0 +1,3 @@
+options ipv6 disable=1
+alias net-pf-10 off
+alias ipv6 off

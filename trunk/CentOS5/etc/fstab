@@ -1,0 +1,10 @@
+/dev/VolGroup00/ROOT    /                       ext3    defaults        1 1
+/dev/VolGroup00/USR     /usr                    ext3    defaults,nodev  1 2
+/dev/VolGroup00/VAR     /var                    ext3    defaults	1 2
+/dev/VolGroup00/TMP     /tmp                    ext3    defaults,nodev,nosuid,noexec 1 2
+LABEL=/boot             /boot                   ext3    defaults,nodev,nosuid,noexec 1 2
+tmpfs                   /dev/shm                tmpfs   defaults        0 0
+devpts                  /dev/pts                devpts  gid=5,mode=620  0 0
+sysfs                   /sys                    sysfs   defaults        0 0
+proc                    /proc                   proc    defaults        0 0
+/dev/VolGroup00/SWAP    swap                    swap    defaults        0 0
