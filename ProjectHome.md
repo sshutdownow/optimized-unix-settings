@@ -1,0 +1,1 @@
+optimized linux and freebsd settings
